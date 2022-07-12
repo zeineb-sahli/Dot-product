@@ -1,0 +1,18 @@
+procedure dot-product (v1,v2:integer ,var pv)
+var i :INTEGER
+BEGIN
+FOR i FROM 0 TO v1.length STEP 1  DO
+    pv=pv+v1[i]*v2[i];
+END_FOR
+END
+ALGORITHM vec
+VAR
+    var t1,t2: array of integer;
+    s:integer
+BEGIN
+    dot-product=(t1,t2,s);
+    if(s==0)THEN
+    write 'orthogono'
+        else
+        write 'not'
+END
